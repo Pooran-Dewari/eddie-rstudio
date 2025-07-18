@@ -2,8 +2,8 @@
 
 #### login to Eddie and launch rstudio
 - make sure you login with ssh -Y option for X11 forwarding
-
 ```
+ssh -Y username@eddie.ecdf.ed.ac.uk
 qlogin -pe interactivemem 4 -l h_vmem=32G
 source /exports/applications/support/set_qlogin_environment.sh
 # check if X11 forwarding works fine, a clock should pop out with the command below
