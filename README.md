@@ -1,6 +1,18 @@
 ### eddie-rstudio
 
- - login with ssh -Y option for X11 forwarding
+#### login to Eddie and launch rstudio
+- make sure you login with ssh -Y option for X11 forwarding
+
+```
+qlogin -pe interactivemem 4 -l h_vmem=32G
+source /exports/applications/support/set_qlogin_environment.sh
+# check if X11 forwarding works fine, a clock should pop out with the command below
+xclock
+module load R
+module load rstudio
+rstudio
+```
+
  - for some reason, rstudio on Eddie uses curl from anaconda, which doesn't work.
  - change path to circumvent this
 
