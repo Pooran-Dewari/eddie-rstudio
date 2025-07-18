@@ -1,4 +1,4 @@
-# eddie-rstudio
+### eddie-rstudio
 
  - login with ssh -Y option for X11 forwarding
  - for some reason, rstudio on Eddie uses curl from anaconda, which doesn't work.
@@ -30,5 +30,7 @@ CRAN "https://packagemanager.posit.co/cran/__linux__/rhel9/latest"
 # should work now
 > install.packages("remotes")
 ```
-Now we can install Seurat 5
+### Now we can install Seurat 5
+```
 remotes::install_github("satijalab/seurat", "seurat5")
+```
